@@ -1,0 +1,89 @@
+Day 1
+-----
+1)open google cloud console
+Google cloud console-->navigation bar-->vertex AI-->Dashboard-->
+
+Training a model
+-----------------
+2)creating dataset in ML
+create dataset-->create a dataset name-->singe label classification-->create
+
+3)uploading the images from folder
+upload images-->select images from folder-->open-->browse(cloud AI)-->select-->continue
+(It imports the images and shown on screen)
+4)Adding name to the label
+add new label-->click on unabled and scroll down and select 100-->scroll up and select all-->select assign label
+
+*Follow the same steps for remaining datasets(files in the model folder)*
+5)right side click on train a new model.(takes some time)
+
+Deploy a model
+--------------
+6)deploy and test-->give any name, any random number(like 1)-->done
+7)deploy to endpoint(takes some time)
+
+test a model
+-------------
+after that upload image and test(it will show how accurate is the image related
+
+Day 2
+------
+Given a different type of classes in model 2
+
+installation of PostgreSQL is done.
+
+
+Day 4
+python code for data analysis
+
+import pandas as pd
+df=pd.read_csv('/content/lmr ds1.csv')
+df['delta'] =((df['TY Sales (Mn)']-df['LY Sales (Mn)']))
+df['percentage %'] =((df['delta']/df['LY Sales (Mn)']*100)).round()
+df['avg price LY'] = (df['LY Sales (Mn)'] / df['LY Units (Mn)']).round(2)
+df['avg price TY'] = (df['TY Sales (Mn)'] / df['TY Units (Mn)']).round(2)
+df['avg pack size LY'] = (df['LY Wt. (Mn)'] / df['LY Units (Mn)']).round()
+df['avg pack size TY'] = (df['TY Wt. (Mn)'] / df['TY Units (Mn)']).round()
+df['avg per liters LY'] = (df['LY Sales (Mn)'] / df['LY Wt. (Mn)']).round(2)  
+df['avg per liters TY'] = df['TY Wt. (Mn)'] / df['TY Wt. (Mn)']
+df
+df.head()
+
+	Mock Brand	LY Sales (Mn)	TY Sales (Mn)	LY Units (Mn)	TY Units (Mn)	LY Wt. (Mn)	TY Wt. (Mn)	delta	percentage %	
+0	Dairy Delight	4680	         5970	          1220	          1540	         103500	         77300	         1290	28.0	        
+1	Fresh Farm	9580	         10730	          5450	          5430	         30900	         24500	         1150	12.0	     
+2	Nature Valley	7720	         9660	          3200	          3070	         41000	         42000	         1940	25.0	      
+3	Snack Shack	6590	         8010	          4560	          5000	         136800 	 103800	         1420	22.0	       
+4	Crunchy Bites	2830	         2770	          7350	          9510	         98800	         67700	         -60	-2.0	     
+5	Beverage Bliss	2830	         3500	          2750	          2740	         21200	         18600	         670	24.0	     
+
+Metrix
+
+avg price LY  avg price TY  avg pack size LY  avg pack size TY  avg per liters LY  avg per liters TY
+
+3.84	          3.88	         85.0	              50.0	     0.05	          1.0
+1.76	          1.98	         6.0	              5.0	     0.31	          1.0
+2.41	          3.15	         13.0	              14.0	     0.19	          1.0                        avg price=sales\units
+1.45	          1.60	         30.0	              21.0	     0.05	          1.0
+0.39	          0.29	         13.0	              7.0	     0.03	          1.0
+1.03	          1.28	         8.0	              7.0	     0.13	          1.0
+
+
+Day 5
+
+Downloading Tableau
+
+1.click on microsoft excel option 
+2.open excel 
+3.sheets appears
+4.open orders
+5.go to sheet 1 worksheet
+6.on right hand side you can see show me
+7.drop the category into the columns or rows
+8.same way drop the sales into the columns or rows
+9.In marks, click on labels
+10.next drag the category to the graph
+11.double click on sheet 1 and rename
+
+Now do the sub category
+By following the above steps.
